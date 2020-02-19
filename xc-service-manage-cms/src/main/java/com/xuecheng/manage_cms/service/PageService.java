@@ -12,21 +12,21 @@ import java.util.List;
 
 public interface PageService {
 
-    public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
+    QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
 
     /**
      * 查询页面站点信息
      *
      * @return
      */
-    public abstract List<CmsSite> findAll();
+    List<CmsSite> findAll();
 
     /**
      * 查询模板列表信息
      *
      * @return
      */
-    public abstract List<CmsTemplate> findTemplateList();
+    List<CmsTemplate> findTemplateList();
 
     /**
      * 新增页面
@@ -34,7 +34,7 @@ public interface PageService {
      * @param cmsPage
      * @return
      */
-    public abstract CmsPageResult add(CmsPage cmsPage);
+    CmsPageResult add(CmsPage cmsPage);
 
     /**
      * 根据页面Id查询页面信息
@@ -42,7 +42,7 @@ public interface PageService {
      * @param id
      * @return
      */
-    public abstract CmsPage getById(String id);
+    CmsPage getById(String id);
 
     /**
      * 修改页面
@@ -51,7 +51,7 @@ public interface PageService {
      * @param cmsPage
      * @return
      */
-    public abstract CmsPageResult update(String id, CmsPage cmsPage);
+    CmsPageResult update(String id, CmsPage cmsPage);
 
     /**
      * 根据页面Id删除页面信息
@@ -59,5 +59,5 @@ public interface PageService {
      * @param id
      * @return
      */
-    public abstract ResponseResult delete(String id);
+    ResponseResult delete(String id);
 }
