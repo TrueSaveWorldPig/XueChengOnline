@@ -42,6 +42,7 @@ list指令
 <#list stuMap?keys as k>
     <span <#if stuMap[k].name=='小明'>style="background-color: red" </#if>>${stuMap[k].name}</span>
     <span>${stuMap[k].age}</span>
+    <span <#if stuMap[k].money gt 1000>style="background-color: red" </#if>>${stuMap[k].name}</span>
 </#list>
 
 <#if stuMap??><h1>你哈</h1></#if>

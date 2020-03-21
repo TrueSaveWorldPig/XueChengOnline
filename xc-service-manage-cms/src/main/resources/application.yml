@@ -9,3 +9,7 @@ spring:
       database: xc_cms
       username: root
       password: root
+  freemarker:
+    cache: false  # 关闭模板缓存, 方便测试
+    settings:
+      template_update_delay: 0
